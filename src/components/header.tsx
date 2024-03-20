@@ -22,6 +22,7 @@ export default function Home() {
           <Link to='/' className='navbar-item'>Home</Link>
           <Link to='/about' className='navbar-item'>About</Link>
           <Link to='/Items' className='navbar-item'>Items</Link>
+          <Link to='/admin' className='navbar-item'>Admin</Link>
         </div>
 
         <div className="navbar-end">
