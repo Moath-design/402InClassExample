@@ -1,23 +1,25 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Header from './components/header';
 import Footer from './components/footer';
 import Home from './components/home';
 import About from './components/about';
-
+import Items from './components/Items';
+import ItemPage from './components/ItemPage';
 
 function App() {
   return (
     <Router>
-      <Header/>
+      <Header />
       <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-      </Routes>
-      <Footer/>
+        <Route path='/About' element={<About/>}/>
+        <Route path='/items' element={<Items/>}/>
+        <Route path='/items/:id' element={<ItemPage/>}/>
+        </Routes>
+      <Footer />
     </Router>
-    
   );
 }
 
