@@ -13,7 +13,7 @@ export default function ItemPage() {
         ItemService.get(id)
             .then((response: any) => {
                 setItem(response.data);
-                console.log(item);
+                console.log(JSON.stringify(item));
 
             })
             .catch((e: Error) => {
